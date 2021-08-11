@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit pic to div</title>
+    <style>
+      .div1 {
+        width: 200px;
+        height: 200px;
+        background-image: url("https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__340.jpg");
+        background-size: 100% 100%;
+      }
+
+      .img1 {
+        width: 200px;
+        height: 200px;
+      }
+
+      .div2 {
+        width: 600px;
+        height: 600px;
+        background-image: url("https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__340.jpg");
+        background-size: 100% 100%;
+      }
+
+      .img2 {
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>image as is : 537px X 340px</h3>
+    <img
+      src="https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__340.jpg"
+      alt="image as is"
+    />
+    <h3>
+      fit image in a smaller box : div 200px X 200px. use background-image and
+      background-size: 100% 100%;
+    </h3>
+    <div class="div1"></div>
+    <h3>fit image in a smaller box : img 200px X 200px</h3>
+    <img
+      class="img1"
+      src="https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__340.jpg"
+      alt="image fit to small"
+    />
+    <h3>
+      fit image in a bigger box : div 600px X 600px. use background-image and
+      background-size: 100% 100%;
+    </h3>
+    <div class="div2"></div>
+    <h3>fit image in a bigger box : img 600px X 600px</h3>
+    <img
+      class="img2"
+      src="https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__340.jpg"
+      alt="image fit to large"
+    />
+  </body>
+</html>
